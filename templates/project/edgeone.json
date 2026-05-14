@@ -1,0 +1,16 @@
+{
+  "name": "Inkling",
+  "outputDir": "dist",
+  "framework": "vite",
+  "buildCommand": "npm run build",
+  "routes": [
+    {
+      "src": "/api/*",
+      "dest": "/edge-functions/api/"
+    },
+    {
+      "src": "/.edgeone/*",
+      "dest": "/.edgeone/"
+    }
+  ]
+}
